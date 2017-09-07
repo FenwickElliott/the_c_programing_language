@@ -8,11 +8,6 @@
 
 #include <stdio.h>
 
-//int main(int argc, const char * argv[]) {
-//    // insert code here...
-//    printf("Hello, World!\n");
-//    return 0;
-//}
 
 main()
 {
@@ -27,7 +22,7 @@ main()
     printf("fahr\tcelsius\n");
     while (fahr <= upper){
         celsius = (5.0/9.0) * (fahr-32.0);
-        printf("%d\t%f\n", fahr, celsius);
+        printf("%d\t%.2f\n", fahr, celsius);
         fahr = fahr + step;
     }
 }
